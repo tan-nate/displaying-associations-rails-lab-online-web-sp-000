@@ -1,7 +1,6 @@
-<h3><%= pluralize(a.songs.count, 'song') %></h3>
-
-<% @artists.each do |a| %>
 <ul>
-  <li><%= a.name %></li>
+  <% @artists.each do |a| %>
+    <li><%= a.name %></li>
+    <li><%= a.songs.count %></li>
+  <% end %>
 </ul>
-<% end %>
